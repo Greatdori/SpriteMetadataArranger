@@ -44,12 +44,12 @@ struct SpriteMetadataArranger: ParsableCommand {
                 ),
                 offset: .init(x: base["m_Offset"]["x"].doubleValue, y: base["m_Offset"]["y"].doubleValue),
                 textureRect: .init(
-                    x: base["m_VertexData"]["textureRect"]["x"].doubleValue,
-                    y: base["m_VertexData"]["textureRect"]["y"].doubleValue,
-                    width: base["m_VertexData"]["textureRect"]["width"].doubleValue,
-                    height: base["m_VertexData"]["textureRect"]["height"].doubleValue
+                    x: base["m_RD"]["textureRect"]["x"].doubleValue,
+                    y: base["m_RD"]["textureRect"]["y"].doubleValue,
+                    width: base["m_RD"]["textureRect"]["width"].doubleValue,
+                    height: base["m_RD"]["textureRect"]["height"].doubleValue
                 ),
-                textureRectOffset: .init(x: base["m_VertexData"]["textureRectOffset"]["x"].doubleValue, y: base["m_VertexData"]["textureRectOffset"]["y"].doubleValue)
+                textureRectOffset: .init(x: base["m_RD"]["textureRectOffset"]["x"].doubleValue, y: base["m_RD"]["textureRectOffset"]["y"].doubleValue)
             ))
         }
         
